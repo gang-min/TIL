@@ -16,7 +16,7 @@
 
 ### MARK DOWN
 
-- [Mark Down Syntax](https://github.com/gang-min/TIL/blob/main/README/readme.md)
+- [Mark Down Syntax](https://github.com/gang-min/TIL/blob/main/MarkDown/readme.md)
 
 ### GIT
 
