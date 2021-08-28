@@ -24,4 +24,6 @@
 
 ### GIT
 
+- [Git 사용법](https://github.com/gang-min/TIL/blob/main/GIT/GIT.md)
+
 ### JAVASCRIPT
