@@ -20,6 +20,10 @@
 > - Branch
 >   1.  브랜치를 왜 꼭 써야 할까?
 >   2.  브랜치 기본 사용법
+>   3.  머지란? (fast-forward merge, Three-way merge)
+>   4.  Conflict 해결 방법
+>   5.  Rebase란 무엇일까? 왜 꿀일까? 🐝
+>   6.  필요한 커밋만 쏘옥~! 🍒 (cherry-pick)
 
 # `GIT이란`
 
@@ -325,3 +329,165 @@ git branch --move (바꾸고싶은 브랜치명) (바꿀 브랜치명) : branch�
 ```
 
 - `switch`와 비슷한 명령어는 위에서 공부한 `checkout`이다.
+
+## ` 3. 머지란? (fast-forward merge, Three-way merge)`
+
+## `3-1 fast-forward merge`
+
+- `fast-forward merge` 같은 경우는 main(master) branch에서 `새로운 branch가 생성된 이후에 main branch의 변동사항이 없다면` fast-forward merge로 된다.
+
+* 사용법
+
+```
+git merge <merge할 branch명>
+
+merge 완료후
+
+git branch -d <merge한 branch명>
+
+merge가 된 branch는 삭제해주는 것이 좋다.
+
+```
+
+![fast-forward merge](/image/fast-forward_merge.png)
+
+![fast-forward merge](/image/fast-forward_merge2.png)
+
+- `fast-forward merge` 같은 경우는 main(master) branch에서 `새로운 branch가 생성된 이후에 main branch의 변동사항이 없다면` merge를 할 때 단순히 main branch가 가리키고 있는 포인터를 d가 아닌 f로 옮겨 놓기만 하면 된다.
+
+* 그리고 `branch(feature A)를 삭제`하면 깔끔하게` fast-forward merge`가 발생할 수 있다.
+* fast-forward의 단점이라고 생각하면 단점일수도 있는데 히스토리에 merge가 되었다는 사실이 남지 않는다.(워낙 깔끔하게 merge가 되기 떄문에)
+  > - `fast-forward가 가능하지만 Three-way merge방식으로 하는 방법`
+  > - 사용법
+  >
+  > ```
+  > git merge --no-ff(fast-forward) <merge할 branch명>
+  >
+  > merge 완료후
+  >
+  > git branch -d <merge한 branch명>
+  >
+  > merge가 된 branch는 삭제해주는 것이 좋다.
+  > ```
+  >
+  > - 정말 순수하게 모든 것들을 히스토리에 남기길 좋아하는 사람(팀)이라면 이렇게 fast-forward가 가능해도 `따로 merge commit을 만든다`.
+  > - 이렇게 `h라는 commit은 d와 f를 합한 새로운 commit`을 만들어서 main branch에 commit 하게 된다.
+  >   ![fast-forward merge](/image/merge-commit.png)
+
+## `3-2 Three-way merge`
+
+- `Three-way merge` 같은 경우는 main(master) branch에서 `새로운 branch가 생성된 이후에 main branch의 변동사항이 있다면` fast-forward merge는 불가능하고 three-way merge를 이용해야 한다.
+- `즉, 베이스 branch인 main branch와 파생된 feature A branch의 변동사항을 모두 합해서 merge commit을 만든 다음에 main branch에 commit을 해야 한다.`
+- 사용법
+
+```
+(fast-forward merge와) 사용법은 같다.
+
+git merge <merge할 branch명>
+```
+
+- 아무런 옵션없이 사용하게 되면 fast-forward가 가능한 경우라면 merge commit을 만들지 않고 fast-forward merge를 진행하고 만약 아래와 같이 `fast-forward merge가 불가능한 상황이라면 three-way merge를 진행한다`
+  ![fast-forward merge](/image/three-way_merge.png)
+  ![fast-forward merge](/image/three-way_merge2.png)
+
+## `4. Conflict 해결 방법`
+
+- git이 merge를 할 때 무언가 문제가 있어서 자동적으로 해결이 안 된 무언가 충돌이 났을 때 발생할 수 있다.
+- 즉, 두 가지의 branch에서` 동일한 파일을 수정을 했다면 Git이 도대체 '어떤 내용을 추가해야 하는지' 혼동스러울 때` conflict가 발생한다.
+- `⚠️⚠️동일한 파일, 동일한 위치(같은 내용 수정)여야함⚠️⚠️`
+- 이런 경우에는 우리가 직접 수정을 해줘야 한다.
+  ![conflict](/image/conflict.png)
+- 만약 HEAD commit과 feature branch commit이 `동일한 파일 동일한 위치를 수정` 하였고 이때 `merge(git merge feature)`를 하려고 하면
+  ![conflict](/image/conflict2.png)
+- Auto-merging 자동으로 merging하려고 했으나 `Conflict`가 발생하였다.
+  ![conflict](/image/conflict3.png)
+- 발생한 파일의 내용을 보면 이렇게 알 수 없는 문자열이 추가된 것을 볼 수가 있다. 이제 이것은 `Git에서 merge conflict가 어디에서 발생했는지 우리에게 정보를 주기위해서` 자동으로 삽인된 문자열이다.
+
+* merge하는 것을 취소하고 싶다면 `git merge --abort`
+
+- `해결방법1`
+
+```
+Conflict가 발생한 파일을 직접 열어서 수동적으로 해결할 수도 있다.
+
+merge conflict를 해결한 후
+
+conflict를 해결했다고 알려주기 위해서
+
+git add <conflict해결한 파일>을 한 다음에
+
+git merge --continue를 하면 완료.
+
+```
+
+- `해결방법2`
+
+* 우선 git config --global -e 을 열어서 아래 4줄을 추가해 준다.  
+  ![conflict](/image/conflict4.png)
+
+```
+Conflict가 발생하면
+
+git mergetool 명렁어를 입력하면 vscode가 열린다.
+
+하나의 옵션을 선택하고 저장한 후 vscode를 끈다.
+
+자동적으로 commit할 준비가 되어있다.(즉 add 생략)
+
+이제 git merge --continue를 해주면 완료.
+```
+
+![conflict](/image/conflict5.png)
+
+- 수동적으로 파일을 연것과 동일하게 문자열이 생성되어 있지만 4가지의 기능이있는 버튼들이 추가로 있다. 이것을 이용해서 간편하게 해결할 수 있다.
+- Accept Current Change : 현재 있는 branch의 내용을 받아들이는 것
+- Accept Incoming Change : 현재 branch로 merge될 branch의 내용을 받아들이는 것
+- Accept Both Changes : 둘다 쓰는 것
+- Compare changes : Current와 Incoming 차이점을 확인하고 싶을 때
+
+* `⚠️⚠️merge conflict를 해결하는 것만 해야지 이왕 하는 김에 조금 다른 문장도 넣고 다른 코드도 넣고 은근슬쩍 변경사항을 넣는 것은 절대 안된다⚠️⚠️`
+
+## `5. Rebase란 무엇일까? 왜 꿀일까? 🐝`
+
+- 만약 나 `혼자서` 다른 branch에서 작업을 하고 있다면 언제든지 rebase를 자유롭게 할 수 있지만 만약에 `다른 개발자와 함께` 같은 branch에서 작업을 하고 있다면 rebase하는 것은 위험하다.
+- 그이유는 e가 가리키고 있는 포인터를 d가 아니라 g로 변경해야 되는데 이렇게 포인터의 정보를 변경하게 되면 기존의 commit을 유지하는 것이 아니라 `commit은 불변의 진리이다.` 그래서 변경사항이 발생하면 새로운 commit을 만들게 된다. 그렇기 떄문에 겉으로는 똑같아 보이지만 실제로는 다른 e와 f commit이 생기기 떄문에
+- 만약에 다른 개발자가 동일한 branch에서 작업을 하고 있다면 내가 rebase를 하고 push를 해서 서버에 변경된 정보를 업데이트하게 된다면 다른 개발자가 가지고 있는 feature A 의 e와 f는 전혀 다른 e'와 f' commit이기 떄문에 나중에 merge conflict가 발생할 수 있다.
+
+### ⚠️⚠️그래서 rebase는 정말 유용하지만 다른 개발자와 함께 branch 위에서 작업을 하고 있고 이미 히스토리가 서버에 업로드 되어 있는 경우라면 `업로드된 히스토리는 절대 rebase하면 안된다.`⚠️⚠️
+
+### ⚠️⚠️서버에 업데이트되지 않는 `나의 로컬에 있는 commit에 한에서는 rebase를 자유롭게` 해도 된다.⚠️⚠️
+
+![Rebase](/image/rebase.png)
+![Rebase](/image/rebase1.png)
+
+- 사용법
+
+```
+git checkout feature A 로 간다음
+
+git rebase main(master) 하면 main 제일 최신 commit에 rebase된다.
+
+git checkout main 으로 다시 돌아와서
+
+git merge feature A 하면
+
+fast-forward merge로 깔끔하게 merge된다.
+
+merge후 merge된 branch는 삭제
+```
+
+## `6. 필요한 커밋만 쏘옥~! 🍒 (cherry-pick)`
+
+![cherry pick](/image/cherrypick.png)
+
+- 만약 service branch에서 서비스를 개발하고 있는데 서비스 프로젝트중 딱 f commit 기능만 필요해서 main branch에 merge하고 싶을 때 `cherry pick`을 이용하면 된다.
+
+- 사용법
+
+```
+git cherry-pick <가지고오고싶은 commit 해쉬코드>
+```
+
+![cherry pick](/image/cherrypick2.png)
+
+- branch에서 작업 기간이 굉장히 오래걸리거나 또는 내가 특정한 commit을 가지고 오고 싶을 때 유용하게 사용할 수 있다.
