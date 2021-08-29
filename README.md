@@ -21,6 +21,7 @@
 ### GIT
 
 - [Git 사용법](https://github.com/gang-min/TIL/blob/main/GIT/GIT.md)
+- [Git stash](https://github.com/gang-min/TIL/blob/main/GIT/stash.md)
 
 ### HTML
 
