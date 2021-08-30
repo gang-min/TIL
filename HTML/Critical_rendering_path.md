@@ -1,4 +1,4 @@
-# HTML Critical rendering Path의 이해
+# Browser Critical rendering Path의 이해
 
 - 브라우저가 서버에서 페이지에 대한 HTML 응답을 받으면 화면에 표시되기 전에 많은 단계를 거쳐야 한다.
 
