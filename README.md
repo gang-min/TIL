@@ -28,5 +28,6 @@
 ### HTML
 
 - [HTML 개요](https://github.com/gang-min/TIL/blob/main/HTML/HTML_%EA%B0%9C%EC%9A%94.md)
+- [HTML 이란](https://github.com/gang-min/TIL/blob/main/HTML/HTML%EC%9D%B4%EB%9E%80.md)
 
 ### JAVASCRIPT
