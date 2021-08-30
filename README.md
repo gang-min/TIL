@@ -24,6 +24,7 @@
 - [Git stash](https://github.com/gang-min/TIL/blob/main/GIT/stash.md)
 
 * [실수 만회 방법](https://github.com/gang-min/TIL/blob/main/GIT/%EC%8B%A4%EC%88%98%EB%A7%8C%ED%9A%8C%EB%B0%A9%EB%B2%95.md)
+* [GitHub 사용법](https://github.com/gang-min/TIL/blob/main/GIT/GitHub.md)
 
 ### HTML
 
