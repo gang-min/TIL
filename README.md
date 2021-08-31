@@ -14,6 +14,10 @@
 
 ---
 
+### 도움 되는 링크들
+
+- [HTML 헷갈리는거 총 정리](https://www.youtube.com/watch?v=T7h8O7dpJIg)
+
 ### MARK DOWN
 
 - [Mark Down Syntax](https://github.com/gang-min/TIL/blob/main/MarkDown/readme.md)
