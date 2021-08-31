@@ -36,6 +36,8 @@
 
 * [텍스트 요소](https://github.com/gang-min/TIL/blob/main/HTML/%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%9A%94%EC%86%8C.md)
 
+* [구조를 나타내는 요소](https://github.com/gang-min/TIL/blob/main/HTML/%EA%B5%AC%EC%A1%B0%EB%A5%BC%EB%82%98%ED%83%80%EB%82%B4%EB%8A%94%EC%9A%94%EC%86%8C.md)
+
 ### JAVASCRIPT
 
 - [async와 defer에 대하여](https://github.com/gang-min/TIL/blob/main/JavaScript/async-defer.md)
