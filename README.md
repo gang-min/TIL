@@ -46,6 +46,8 @@
 
 * [목록과 표](https://github.com/gang-min/TIL/blob/main/HTML/%EB%AA%A9%EB%A1%9D%EA%B3%BC%ED%91%9C.md)
 
+* [임베디드 요소](https://github.com/gang-min/TIL/blob/main/HTML/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EC%9A%94%EC%86%8C.md)
+
 ### CSS
 
 - [Reset CSS](https://github.com/gang-min/TIL/blob/main/CSS/reset_css.md)
