@@ -44,6 +44,8 @@
 
 * [구조를 나타내는 요소](https://github.com/gang-min/TIL/blob/main/HTML/%EA%B5%AC%EC%A1%B0%EB%A5%BC%EB%82%98%ED%83%80%EB%82%B4%EB%8A%94%EC%9A%94%EC%86%8C.md)
 
+* [목록과 표](https://github.com/gang-min/TIL/blob/main/HTML/%EB%AA%A9%EB%A1%9D%EA%B3%BC%ED%91%9C.md)
+
 ### CSS
 
 - [Reset CSS](https://github.com/gang-min/TIL/blob/main/CSS/reset_css.md)
