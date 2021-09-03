@@ -50,9 +50,13 @@
 
 * [폼 관련 요소](https://github.com/gang-min/TIL/blob/main/HTML/%ED%8F%BC%EA%B4%80%EB%A0%A8%EC%9A%94%EC%86%8C.md)
 
+* [전역 속성](https://github.com/gang-min/TIL/blob/main/HTML/%EC%A0%84%EC%97%AD%EC%86%8D%EC%84%B1.md)
+
 ### CSS
 
 - [Reset CSS](https://github.com/gang-min/TIL/blob/main/CSS/reset_css.md)
+
+* [Cascading](https://github.com/gang-min/TIL/blob/main/CSS/Cascading.md)
 
 ### JAVASCRIPT
 
