@@ -48,6 +48,8 @@
 
 * [임베디드 요소](https://github.com/gang-min/TIL/blob/main/HTML/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EC%9A%94%EC%86%8C.md)
 
+* [폼 관련 요소](https://github.com/gang-min/TIL/blob/main/HTML/%ED%8F%BC%EA%B4%80%EB%A0%A8%EC%9A%94%EC%86%8C.md)
+
 ### CSS
 
 - [Reset CSS](https://github.com/gang-min/TIL/blob/main/CSS/reset_css.md)
