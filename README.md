@@ -70,6 +70,8 @@
 
 * [단위와 값](https://github.com/gang-min/TIL/blob/main/CSS/%EB%8B%A8%EC%9C%84%EC%99%80%EA%B0%92.md)
 
+* [박스 모델](https://github.com/gang-min/TIL/blob/main/CSS/%EB%B0%95%EC%8A%A4%EB%AA%A8%EB%8D%B8.md)
+
 ### JAVASCRIPT
 
 - [async와 defer에 대하여](https://github.com/gang-min/TIL/blob/main/JavaScript/async-defer.md)
