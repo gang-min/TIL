@@ -58,6 +58,8 @@
 
 * [전역 속성](https://github.com/gang-min/TIL/blob/main/HTML/%EC%A0%84%EC%97%AD%EC%86%8D%EC%84%B1.md)
 
+* [data-\*](https://github.com/gang-min/TIL/blob/main/HTML/data%EC%86%8D%EC%84%B1.md)
+
 ### CSS
 
 - [Reset CSS](https://github.com/gang-min/TIL/blob/main/CSS/reset_css.md)
