@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    article::before{
+      content: attr(id);
+    }
+
+    [data-index-number='123']{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <article id="html", data-columns="3" data-index-number=123 data-parent="cars">
+    45
+    54
+    5
+  </article>
+
+  <script>
+    const article = document.querySelector('#html');
+
+    console.log(article.dataset.columns);
+    console.log(article.dataset.indexNumber);
+    console.log(typeof article.dataset.indexNumber);
+  </script>
+</body>
+</html>
