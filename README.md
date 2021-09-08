@@ -18,6 +18,8 @@
 
 - [HTML 헷갈리는거 총 정리](https://www.youtube.com/watch?v=T7h8O7dpJIg)
 
+* [API란?](https://www.youtube.com/watch?v=ckSdPNKM2pY&list=LL&index=1)
+
 ### MARK DOWN
 
 - [Mark Down Syntax](https://github.com/gang-min/TIL/blob/main/MarkDown/readme.md)
