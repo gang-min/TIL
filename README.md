@@ -78,6 +78,8 @@
 
 - [박스 모델](https://github.com/gang-min/TIL/blob/main/CSS/%EB%B0%95%EC%8A%A4%EB%AA%A8%EB%8D%B8.md)
 
+* [레이아웃](https://github.com/gang-min/TIL/blob/main/CSS/%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)
+
 ### JAVASCRIPT
 
 - [async와 defer에 대하여](https://github.com/gang-min/TIL/blob/main/JavaScript/async-defer.md)
