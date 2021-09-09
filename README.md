@@ -80,6 +80,8 @@
 
 * [레이아웃](https://github.com/gang-min/TIL/blob/main/CSS/%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)
 
+* [Color 와 Background](https://github.com/gang-min/TIL/blob/main/CSS/%EC%83%89%EC%83%81%EA%B3%BC%EB%B0%B0%EA%B2%BD.md)
+
 ### JAVASCRIPT
 
 - [async와 defer에 대하여](https://github.com/gang-min/TIL/blob/main/JavaScript/async-defer.md)
