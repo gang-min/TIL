@@ -84,6 +84,8 @@
 
 * [Transform](https://github.com/gang-min/TIL/blob/main/CSS/transform.md)
 
+* [Transition](https://github.com/gang-min/TIL/blob/main/CSS/transition.md)
+
 ### JAVASCRIPT
 
 - [async와 defer에 대하여](https://github.com/gang-min/TIL/blob/main/JavaScript/async-defer.md)
