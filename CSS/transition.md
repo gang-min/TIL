@@ -6,7 +6,6 @@
 > 2. transition - property, transition-duration
 > 3. transition - delay, transition-timing-function
 > 4. transition (shorthand)
-> 5. transition + transition 활용 예제
 
 ## `1. transition (전환) 개요`
 
