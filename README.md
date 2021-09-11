@@ -64,6 +64,8 @@
 
 - [BEM - CSS방법론](https://github.com/gang-min/TIL/blob/main/CSS/BEM.md)
 
+* [CSS Variables](https://github.com/gang-min/TIL/blob/main/CSS/cssVariable.md)
+
 * [Reset CSS](https://github.com/gang-min/TIL/blob/main/CSS/reset_css.md)
 
 - [Cascading](https://github.com/gang-min/TIL/blob/main/CSS/Cascading.md)
