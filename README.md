@@ -36,6 +36,10 @@
 
 - [API란?](https://github.com/gang-min/TIL/blob/main/Server/API%EB%9E%80.md)
 
+- [HTTP 프로토콜](https://github.com/gang-min/TIL/blob/main/Server/HTTP.md)
+
+- [URL을 통해 서버 구조 이해하기](https://github.com/gang-min/TIL/blob/main/Server/URL.md)
+
 ### HTML
 
 - [Browser Critical Rendering Path](https://github.com/gang-min/TIL/blob/main/HTML/Critical_rendering_path.md)
