@@ -414,13 +414,59 @@ grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end ;
 
 ## `15. Gird 단위 - fr, min-content, max-content`
 
-```
-- fr
+- `fr`
 
-: container를 길이를 비율로 가진다. 절대길이와도 혼합하여 사용할 수 있다. 그러면 절대길이는 그 값을 가지고 나머지 길이를 fr 비율대로 가진다.
-
-ex) 1fr 2fr // 1 : 2
-    2fr 1fr 3fr // 2 : 1: 3
-    100px 1fr 2fr // 100px 가지고 나머지를 container의 길이를 1 : 2
+  : container를 길이를 비율로 가진다. 절대길이와도 혼합하여 사용할 수 있다. 그러면 절대길이는 그 값을 가지고 나머지 길이를 fr 비율대로 가진다.
 
 ```
+ex)
+1fr 2fr // 1 : 2
+
+2fr 1fr 3fr // 2 : 1: 3
+
+100px 1fr 2fr // 100px 가지고 나머지를 container의 길이를 1 : 2
+```
+
+- `min-conten`t
+
+  : 한글과 영어는 조금 다르게 동작하는데 한글은 한글자 한글자 글자별로 쪼갤 수 있어 min 최소한의 글자 content 크기만큼 가지는데 영어는 한단어를 그 이하로 쪼개지 못해 한단어의 크기만큼 가지게 된다.
+
+  ![min-content](/image/min-content.png)
+
+  ![min-content](/image/min-content2.png)
+
+  : 만약, 영어가 여러 단어가 있다면 단어 별로 쪼개고 제일 긴 단어가 기준이 된다.
+
+  ![min-content](/image/min-content3.png)
+
+- `max-content`
+
+  : max에서 알 수 있듯이 한 줄에 볼 수 있게끔 영어와 한글을 상관없이 최대한 늘린다.
+
+  ![max-content](/image/max-content.png)
+
+> min-content 와 max-content는 내부의 content에 따라 유동적으로 길이를 변경할 때 사용한다.
+
+## `16. Grid 단위 - auto-fill, auto-fit`
+
+- `auto-fill`
+
+  - grid-template-columns: repeat(3, 1fr); 이렇게 딱 3열 을 지정하는 것이 아니라 auto-fill을 지정하면 container의 넓이에 따라 반응형으로 배치된다.
+
+  ![auto-fill](/image/auto-fill.png)
+
+  > 남는 공간이 100px이 되지않아 우측에 여백이 생기는게 보기 싫다면 minmax()함수를 사용해서 해결할 수 있다.
+
+  ![minmax](/image/minmax2.png)
+
+  - 최소 100px의 값을 가지고 최대한 1fr을 가진다. 그래서 남는공간이 100px보다 적게남았을 땐 최대의 길이인 1fr을 가져 여백없이 쭉 차다가 남는공간이 100px이 될 때 하나의 열이 더 생기게된다.
+
+- ` auto-fit`
+
+  - auto-fill 과 minmax()를 사용하더라도 더 이상 들어올 item들이 없다면 container에 빈 공간이 생길 수 밖에 없다.
+
+    ![auto-fit](/image/auto-fit.png)
+
+  - 이를 해결하기 위해서 auto-fit을 쓴다.
+
+    ![auto-fit](/image/auto-fit2.png)
