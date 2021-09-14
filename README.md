@@ -98,6 +98,8 @@
 
 * [flex](https://github.com/gang-min/TIL/blob/main/CSS/flex.md)
 
+* [Grid](https://github.com/gang-min/TIL/blob/main/CSS/grid.md)
+
 ### JAVASCRIPT
 
 - [async와 defer에 대하여](https://github.com/gang-min/TIL/blob/main/JavaScript/async-defer.md)
