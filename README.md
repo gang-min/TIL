@@ -105,3 +105,5 @@
 - [async와 defer에 대하여](https://github.com/gang-min/TIL/blob/main/JavaScript/async-defer.md)
 
 - [DOM](https://github.com/gang-min/TIL/blob/main/JavaScript/DOM.md)
+
+- [IntersectionObserver - Web API](https://github.com/gang-min/TIL/blob/main/JavaScript/IntersectionObserver.md)
