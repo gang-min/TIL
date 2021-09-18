@@ -81,7 +81,7 @@ const callback = function(entries, observer){
 
 - `intersectionRect`는 boundingClientRect와 비슷하지만 `현재 뷰포트에 들어온 상태`에서의 포지션과 너비와 높이를 알 수 있다.
 
-- `isIntersecting`은 요소가 뷰포트 안에 들어오는 상태라면 true이고 즉, 뷰포트안에 요소가 조금이라도 보인다면 true, 보이지 않는다면 false이다.
+- `isIntersecting`은 요소가 뷰포트 안에 들어오는 상태라면 true이고 즉, 뷰포트안에 요소가 조금이라도 보인다면 true, 보이지 않는다면 false이다. (threshold:0 기준) / 만약 threshold:0.7이라면, 요소가 70% 들어와있을 때 true 요소가 30% 이상 나가서 화면에 70% 이하로 보여진다면 false이다.
 
 - `rootBounds`는 지금 현재 보여지고 있는 root 너비와 높이를 알 수 있다. 위의 예제에서는 option객체를 지정하지 않았기 떄문에 기본값은 뷰포트로 지정되어 있다.
 
