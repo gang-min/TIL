@@ -107,3 +107,5 @@
 - [DOM](https://github.com/gang-min/TIL/blob/main/JavaScript/DOM.md)
 
 - [IntersectionObserver - Web API](https://github.com/gang-min/TIL/blob/main/JavaScript/IntersectionObserver.md)
+
+- [event flow - Bubbling & Capturing](https://github.com/gang-min/TIL/blob/main/JavaScript/eventFlow.md)
