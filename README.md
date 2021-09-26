@@ -110,6 +110,8 @@
 
 - [event flow - Bubbling & Capturing](https://github.com/gang-min/TIL/blob/main/JavaScript/eventFlow.md)
 
+- [Template Literal](https://github.com/gang-min/TIL/blob/main/JavaScript/templateLiteral.md)
+
 - [자바스크립트 개요](https://github.com/gang-min/TIL/blob/main/JavaScript/js-overview.md)
 
 - [변수와 데이터 타입](https://github.com/gang-min/TIL/blob/main/JavaScript/%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%83%80%EC%9E%85%EA%B3%BC%EB%B3%80%EC%88%98.md)
@@ -121,3 +123,5 @@
 ### ETC
 
 - [조건문 문제 풀이](https://github.com/gang-min/TIL/blob/main/ETC/%EC%A1%B0%EA%B1%B4%EB%AC%B8%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
+
+- [반복문 문제 풀이](https://github.com/gang-min/TIL/blob/main/ETC/%EB%B0%98%EB%B3%B5%EB%AC%B8%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
