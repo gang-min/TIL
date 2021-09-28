@@ -125,3 +125,5 @@
 - [조건문 문제 풀이](https://github.com/gang-min/TIL/blob/main/ETC/%EC%A1%B0%EA%B1%B4%EB%AC%B8%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
 
 - [반복문 문제 풀이](https://github.com/gang-min/TIL/blob/main/ETC/%EB%B0%98%EB%B3%B5%EB%AC%B8%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
+
+- [기본 문제 풀이(종합)](https://github.com/gang-min/TIL/blob/main/ETC/%EC%A2%85%ED%95%A9%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
