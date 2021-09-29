@@ -122,6 +122,10 @@
 
 ### ETC
 
+- [웹표준과 웹접근성](https://github.com/gang-min/TIL/blob/main/ETC/%EC%9B%B9%ED%91%9C%EC%A4%80%EC%9B%B9%EC%A0%91%EA%B7%BC%EC%84%B1.md)
+
+- [접근성 높은 데이터 테이블 제작](https://github.com/gang-min/TIL/blob/main/ETC/%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%85%8C%EC%9D%B4%EB%B8%94.md)
+
 - [조건문 문제 풀이](https://github.com/gang-min/TIL/blob/main/ETC/%EC%A1%B0%EA%B1%B4%EB%AC%B8%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
 
 - [반복문 문제 풀이](https://github.com/gang-min/TIL/blob/main/ETC/%EB%B0%98%EB%B3%B5%EB%AC%B8%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
