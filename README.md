@@ -120,6 +120,14 @@
 
 - [연산자](https://github.com/gang-min/TIL/blob/main/JavaScript/%EC%97%B0%EC%82%B0%EC%9E%90.md)
 
+### 기본 수학 이론
+
+- [알고리즘 (시간 복잡도)](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EB%B3%B5%EC%9E%A1%EB%8F%84.md)
+
+- [경우의 수 - 순열,조합](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EA%B2%BD%EC%9A%B0%EC%9D%98%EC%88%98.md)
+
+- [점화식 - 등차수열,등비수열,팩토리얼,피보나치](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EC%A0%90%ED%99%94%EC%8B%9D.md)
+
 ### ETC
 
 - [웹표준과 웹접근성](https://github.com/gang-min/TIL/blob/main/ETC/%EC%9B%B9%ED%91%9C%EC%A4%80%EC%9B%B9%EC%A0%91%EA%B7%BC%EC%84%B1.md)
