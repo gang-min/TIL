@@ -122,13 +122,19 @@
 
 ### 기본 수학 이론
 
-- [알고리즘 (시간 복잡도)](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EB%B3%B5%EC%9E%A1%EB%8F%84.md)
-
 - [경우의 수 - 순열,조합](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EA%B2%BD%EC%9A%B0%EC%9D%98%EC%88%98.md)
 
 - [점화식 - 등차수열,등비수열,팩토리얼,피보나치](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EC%A0%90%ED%99%94%EC%8B%9D.md)
 
 - [프로그래머스 기본/실전 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
+
+### 자료구조
+
+### 알고리즘
+
+- [알고리즘이란?](https://github.com/gang-min/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
+- [알고리즘 (시간 복잡도)](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EB%B3%B5%EC%9E%A1%EB%8F%84.md)
 
 ### ETC
 
