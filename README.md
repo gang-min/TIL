@@ -136,6 +136,8 @@
 
 - [배열 관련 문제](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%B0%B0%EC%97%B4%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%A0%9C.md)
 
+- [연결 리스트 - 단순 연결 리스트](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+
 ### 알고리즘
 
 - [알고리즘이란?](https://github.com/gang-min/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
