@@ -146,7 +146,7 @@
 
 - [알고리즘이란?](https://github.com/gang-min/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
 
-- [알고리즘 (시간 복잡도)](https://github.com/gang-min/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99%EC%9D%B4%EB%A1%A0/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EB%B3%B5%EC%9E%A1%EB%8F%84.md)
+- [알고리즘 (시간 복잡도)](https://github.com/gang-min/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EB%B3%B5%EC%9E%A1%EB%8F%84.md)
 
 ### ETC
 
