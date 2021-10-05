@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>큐최적화</title>
+  </head>
+  <body>
+    <script>
+      function Queue(array) {
+        this.array = array ? array : [];
+        this.tail = array ? array.length : 0;
+        this.head = 0;
+      }
+
+      // index기반으로 enqueue, dequeue 작성
+      Queue.prototype.enqueue = function (element) {
+        return (this.array[this.tail++] = element);
+      };
+
+      Queue.prototype.dequeue = function () {
+        if (this.tail === this.head) {
+          return undefined;
+        }
+
+        let element = this.array[this.head];
+        delete this.array[this.head++];
+        return element;
+      };
+
+      let queue = new Queue([1, 2]);
+      console.log(queue); // output : Queue {array : [1,2], tail : 2, head: 0}
+
+      queue.enqueue(3);
+      queue.enqueue(4);
+      console.log(queue); // output : Queue {array : [1,2,3,4], tail : 4, head: 0}
+
+      console.log(queue.dequeue()); // output : 1
+      console.log(queue.dequeue()); // output : 2
+      console.log(queue); // output : Queue {array : [<2 empty items>,3,4], tail : 4, head: 2}
+    </script>
+  </body>
+</html>
