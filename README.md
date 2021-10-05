@@ -146,6 +146,8 @@
 
 - [스택이란](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%8A%A4%ED%83%9D.md)
 
+- [스택 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%8A%A4%ED%83%9D%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
+
 ### 알고리즘
 
 - [알고리즘이란?](https://github.com/gang-min/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
