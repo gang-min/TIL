@@ -150,6 +150,8 @@
 
 - [큐 (Queue)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%81%90.md)
 
+- [우선순위 큐](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90.md)
+
 ### 알고리즘
 
 - [알고리즘이란?](https://github.com/gang-min/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
