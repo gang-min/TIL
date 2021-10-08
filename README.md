@@ -160,6 +160,8 @@
 
 - [딕셔너리 (Dictionary)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC.md)
 
+- [해시 테이블 (Hash Table)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94.md)
+
 ### 알고리즘
 
 - [알고리즘이란?](https://github.com/gang-min/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
