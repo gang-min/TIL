@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>체이닝</title>
+  </head>
+  <body>
+    <script>
+      // Node() : data와 point를 가지고 있는 객체
+      function Node(data) {
+        this.data = data;
+        this.next = null;
+      }
+
+      // LinkedList() : head와 length를 가지고 있는 객체
+      function LinkedList() {
+        this.head = null;
+        this.length = 0;
+      }
+
+      //  size() : 연결 리스트 내 노드 개수 확인
+      LinkedList.prototype.size = function () {
+        return this.length;
+      };
+
+      // isEmpty() : 객체 내 노드 존재 여부 파악
+      LinkedList.prototype.isEmpty = function () {
+        return this.length === 0;
+      };
+
+      // printNode() : 노드 출력
+      LinkedList.prototype.printNode = function () {
+        for (let node = this.head; node != null; node = node.next) {
+          console.log(`${node.data} ->`);
+        }
+        console.log(null);
+      };
+
+      // append() : 연결 리스트 가장 끝에 노드 추가
+      LinkedList.prototype.append = function (value) {
+        let node = new Node(value),
+          current = this.head;
+        if (this.head === null) {
+          this.head = node;
+        } else {
+          while (current.next !== null) {
+            current = current.next;
+          }
+          current.next = node;
+        }
+        this.length++;
+      };
+
+      // insert() : position 위치에 노드 추가
+      LinkedList.prototype.insert = function (value, position = 0) {
+        if (position < 0 || position > this.length) {
+          return false;
+        }
+
+        let node = new Node(value),
+          current = this.head,
+          index = 0,
+          prev;
+
+        if (position === 0) {
+          node.next = current;
+          this.head = node;
+        } else {
+          while (index++ < position) {
+            prev = current;
+            current = current.next;
+          }
+
+          node.next = current;
+          prev.next = node;
+        }
+        this.length++;
+
+        return true;
+      };
+
+      // remove() : value 데이터를 찾아 노드 삭제
+      // 없어진 노드는 더이상 아무도 참조하지 않기 떄문에 가비지컬렉터가 알아서 제거해준다.
+      LinkedList.prototype.remove = function (value) {
+        let current = this.head;
+        prev = current;
+
+        while (current.data != value && current.next !== null) {
+          prev = current;
+          current = current.next;
+        }
+
+        if (current.data !== value) {
+          return null;
+        }
+
+        if (current === this.head) {
+          this.head = current.next;
+        } else {
+          prev.next = current.next;
+        }
+
+        this.length--;
+
+        return current.data;
+      };
+
+      // removeAt() : position 위치 노드 삭제
+      LinkedList.prototype.removeAt = function (position = 0) {
+        if (position < 0 || position >= this.length) {
+          return null;
+        }
+
+        let current = this.head,
+          index = 0,
+          prev;
+
+        if (position === 0) {
+          this.head = current.next;
+        } else {
+          while (index++ < position) {
+            prev = current;
+            current = current.next;
+          }
+
+          prev.next = current.next;
+        }
+
+        this.length--;
+
+        return current.data;
+      };
+
+      // indexOf() : value 값을 갖는 노드 위치 반환
+      LinkedList.prototype.indexOf = function (value) {
+        let current = this.head,
+          index = 0;
+
+        while (current !== null) {
+          if (current.data === value) {
+            return index;
+          }
+
+          index++;
+          current = current.next;
+        }
+
+        return -1;
+      };
+
+      // remove2() : indexOf + removeAt = remove
+      LinkedList.prototype.remove2 = function (value) {
+        let index = this.indexOf(value);
+        return this.removeAt(index);
+      };
+
+      const HASH_SIZE = 37;
+
+      // Element() : key, value 저장을 위한 생성자
+      function Element(key, value) {
+        this.key = key;
+        this.value = value;
+      }
+
+      // ChainingHashTable() : 생성자
+      function ChainingHashTable() {
+        this.table = new Array(HASH_SIZE);
+        this.length = 0;
+      }
+
+      // hashCode() : 해시 함수
+      ChainingHashTable.prototype.hashCode = function (key) {
+        let hash = 0;
+        for (let i = 0; i < key.length; i++) {
+          hash += key.charCodeAt(i);
+        }
+
+        return hash % HASH_SIZE;
+      };
+
+      // clear() : 초기화
+      ChainingHashTable.prototype.clear = function () {
+        this.table = new Array(HASH_SIZE);
+        this.length = 0;
+      };
+
+      // size() : 크기 반환
+      ChainingHashTable.prototype.size = function () {
+        return this.length;
+      };
+
+      // put() : 데이터 추가
+      ChainingHashTable.prototype.put = function (key, value) {
+        let index = this.hashCode(key);
+        console.log(`key : ${key} -> index : ${index}`);
+
+        if (this.table[index] === undefined) {
+          this.table[index] = new LinkedList();
+        }
+
+        this.table[index].append(new Element(key, value));
+        this.length++;
+
+        return true;
+      };
+
+      // getBuffer() : 데이터 셋 반환
+      ChainingHashTable.prototype.getBuffer = function () {
+        let array = [];
+        for (let i = 0; i < this.table.length; i++) {
+          if (this.table[i]) {
+            let current = this.table[i].head;
+            do {
+              array.push(current.data);
+              current = current.next;
+            } while (current);
+          }
+        }
+        return array;
+      };
+
+      // print() : 데이터 셋 출력
+      ChainingHashTable.prototype.print = function () {
+        for (let i = 0; i < this.table.length; i++) {
+          if (this.table[i]) {
+            let current = this.table[i].head;
+            console.log(i);
+            do {
+              console.log("->");
+              console.log(`${current.data.key} : ${current.data.value}`);
+              current = current.next;
+            } while (current);
+            console.log("");
+          }
+        }
+      };
+
+      // get() : 데이터 조회
+      ChainingHashTable.prototype.get = function (key) {
+        let index = this.hashCode(key);
+
+        if (this.table[index] !== undefined && !this.table[index].isEmpty()) {
+          let current = this.table[index].head;
+
+          do {
+            if (current.data.key === key) {
+              return current.data.value;
+            }
+            current = current.next;
+          } while (current);
+        }
+
+        return undefined;
+      };
+
+      // remove() : 데이터 삭제
+      ChainingHashTable.prototype.remove = function (key) {
+        let index = this.hashCode(key);
+        let element = undefined;
+
+        if (this.table[index] !== undefined) {
+          let current = this.table[index].head;
+
+          do {
+            if (current.data.key === key) {
+              element = current.data;
+              this.table[index].remove(current.data);
+              this.length--;
+              if (this.table[index].isEmpty()) {
+                delete this.table[index];
+              }
+            }
+            current = current.next;
+          } while (current);
+        }
+
+        return element;
+      };
+
+      let cht = new ChainingHashTable();
+
+      cht.put("Ana", 172);
+      cht.put("Donnie", 183); // 충돌
+      cht.put("Sue", 163);
+      cht.put("Jamie", 168); // 충돌
+      cht.put("Paul", 190);
+      console.log(cht);
+
+      console.log(cht.remove("Sue"));
+      console.log(cht.remove("Jamie"));
+      console.log(cht.remove("Ana"));
+    </script>
+  </body>
+</html>
