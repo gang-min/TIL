@@ -132,37 +132,43 @@
 
 - [자료구조란?](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0.md)
 
-- [배열](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%B0%B0%EC%97%B4.md)
+- `선형 자료 구조`
 
-- [배열 관련 문제](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%B0%B0%EC%97%B4%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%A0%9C.md)
+  - [배열](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%B0%B0%EC%97%B4.md)
 
-- [연결 리스트 - 단순 연결 리스트](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+  - [배열 관련 문제](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%B0%B0%EC%97%B4%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%A0%9C.md)
 
-- [연결 리스트 - 이중 연결 리스트](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9D%B4%EC%A4%91%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+  - [연결 리스트 - 단순 연결 리스트](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
 
-- [연결 리스트 - 원형 연결 리스트](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9B%90%ED%98%95%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+  - [연결 리스트 - 이중 연결 리스트](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9D%B4%EC%A4%91%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
 
-- [연결 리스트 관련 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%AC%B8%EC%A0%9C.md)
+  - [연결 리스트 - 원형 연결 리스트](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9B%90%ED%98%95%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
 
-- [스택 (Stack)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%8A%A4%ED%83%9D.md)
+  - [연결 리스트 관련 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%AC%B8%EC%A0%9C.md)
 
-- [스택 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%8A%A4%ED%83%9D%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
+  - [스택 (Stack)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%8A%A4%ED%83%9D.md)
 
-- [큐 (Queue)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%81%90.md)
+  - [스택 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%8A%A4%ED%83%9D%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
 
-- [우선순위 큐](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90.md)
+  - [큐 (Queue)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%81%90.md)
 
-- [원형 큐](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9B%90%ED%98%95%ED%81%90.md)
+  - [우선순위 큐](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90.md)
 
-- [덱 (Deque)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%8D%B0%ED%81%AC.md)
+  - [원형 큐](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9B%90%ED%98%95%ED%81%90.md)
 
-- [큐, 덱 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%81%90-%EB%8D%B0%ED%81%AC%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
+  - [덱 (Deque)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%8D%B0%ED%81%AC.md)
 
-- [딕셔너리 (Dictionary)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC.md)
+  - [큐, 덱 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%81%90-%EB%8D%B0%ED%81%AC%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
 
-- [해시 테이블 (Hash Table)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94.md)
+  - [딕셔너리 (Dictionary)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC.md)
 
-- [딕셔너리, 해시 테이블 관련 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC_%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AC%B8%EC%A0%9C.md)
+  - [해시 테이블 (Hash Table)](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94.md)
+
+  - [딕셔너리, 해시 테이블 관련 문제 풀이](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC_%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AC%B8%EC%A0%9C.md)
+
+- `비선형 자료구조`
+
+  - [트리, 이진트리](https://github.com/gang-min/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%8A%B8%EB%A6%AC.md)
 
 ### 알고리즘
 
