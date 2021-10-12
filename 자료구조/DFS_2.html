@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DFS 스택을 이용한 구현</title>
+  </head>
+  <body>
+    <script>
+      //  Stack() : 생성자 함수로 초기 데이터 설정
+      function Stack(array) {
+        this.array = array ? array : [];
+      }
+
+      // getBuffer() : 객체 내 데이터 셋 반환
+      Stack.prototype.getBuffer = function () {
+        return this.array.slice(); // slice는 매개변수를 주지 않았을 때 배열의 처음부터 끝까지를 새로운 배열 객체로 반환한다.
+      };
+
+      // isEmpty() : 객체 내 데이터 존재 여부 파악
+      Stack.prototype.isEmpty = function () {
+        return this.array.length === 0;
+      };
+
+      // push() : 데이터 추가
+      Stack.prototype.push = function (element) {
+        return this.array.push(element);
+      };
+
+      // pop() : 데이터 삭제
+      Stack.prototype.pop = function () {
+        return this.array.pop();
+      };
+
+      // peek() : 가장 끝 데이터 반환
+      Stack.prototype.peek = function () {
+        return this.array[this.array.length - 1];
+      };
+
+      // size() : 스택 내 데이터 개수 확인
+      Stack.prototype.size = function () {
+        return this.array.length;
+      };
+
+      // indexOf() : 데이터 위치 값 조회
+      Stack.prototype.indexOf = function (element, position = 0) {
+        // case 1
+        // return this.array.indexOf(element, position);
+        // case 2
+        for (let i = position; i < this.array.length; i++) {
+          if (element === this.array[i]) {
+            return i;
+          }
+
+          return -1;
+        }
+      };
+
+      // includes() : 데이터 존재 여부 확인
+      Stack.prototype.includes = function (element, position = 0) {
+        // case 1
+        // return this.array.includes(element, position);
+        // case 2
+        for (let i = position; i < this.array.length; i++) {
+          if (element === this.array[i]) {
+            return true;
+          }
+
+          return false;
+        }
+      };
+
+      // Graph() : edge object 객체 저장을 위한 생성자
+      function Graph() {
+        this.edge = {};
+        this.visited = {};
+      }
+
+      // addVertex() : 정점(vertex) 추가
+      Graph.prototype.addVertex = function (v) {
+        this.edge[v] = [];
+        this.visited[v] = false;
+      };
+
+      // addEdge() : 간선(edge) 추가
+      Graph.prototype.addEdge = function (v1, v2) {
+        this.edge[v1].push(v2);
+      };
+
+      // dfs() : DFS 탐색
+      Graph.prototype.dfs = function (startVertex) {
+        this._dfsLoopVisit(startVertex);
+      };
+
+      // _dfsLoopVisit() : 스택을 이용한 DFS 탐색
+      Graph.prototype._dfsLoopVisit = function (vertex) {
+        let stack = new Stack();
+        stack.push(vertex);
+
+        while (!stack.isEmpty()) {
+          let vertex = stack.pop();
+          if (this.visited[vertex]) {
+            continue;
+          } // 어떤 노드를 방문했었는지 여부 검사
+
+          this.visited[vertex] = true;
+          console.log(`visit "${vertex}`);
+
+          let neighbors = this.edge[vertex];
+          for (let i = neighbors.length - 1; i >= 0; i--) {
+            stack.push(neighbors[i]);
+          }
+        }
+      };
+
+      let graph = new Graph();
+      let vertices = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+
+      for (let i = 0; i < vertices.length; i++) {
+        graph.addVertex(vertices[i]);
+      }
+
+      graph.addEdge("A", "B");
+      graph.addEdge("A", "C");
+      graph.addEdge("A", "D");
+      graph.addEdge("C", "G");
+      graph.addEdge("D", "G");
+      graph.addEdge("D", "H");
+      graph.addEdge("B", "E");
+      graph.addEdge("B", "F");
+      graph.addEdge("E", "I");
+
+      graph.dfs("A");
+    </script>
+  </body>
+</html>
